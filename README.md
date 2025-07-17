@@ -1,69 +1,69 @@
 # 🎬 Movie Review Web App – Generația Tech Project
 
-Acesta este un proiect web realizat în cadrul programului **Generația Tech**, ce constă într-o aplicație PHP conectată la o bază de date SQL Server, destinată afișării și filtrării de filme și genuri.
+This is a web project developed as part of the **Generația Tech** program. It is a PHP application connected to a SQL Server database, designed to display and filter movies and genres.
 
 ---
 
-## 📌 Funcționalități
+## 📌 Features
 
-- 🔍 Căutare filme după titlu (`search-results.php`)
-- 🎥 Afișare listă filme (`movies.php`)
-- 🧾 Detalii film individual (`movie.php`)
-- 🎭 Filtrare după gen (`genres.php`)
-- 📬 Pagină de contact (`contact.php`)
-- 🗄️ Stocare recenzii în baza de date (`reviews.sql`)
-- 🧩 Cod organizat modular cu `includes/` și `assets/`
+- 🔍 Search movies by title (`search-results.php`)
+- 🎥 Display movie list (`movies.php`)
+- 🧾 View individual movie details (`movie.php`)
+- 🎭 Filter by genre (`genres.php`)
+- 📬 Contact page (`contact.php`)
+- 🗄️ Store reviews in a database (`reviews.sql`)
+- 🧩 Modular code structure using `includes/` and `assets/`
 
 ---
 
-## 🛠️ Tehnologii utilizate
+## 🛠️ Technologies Used
 
 - PHP 8+
 - Microsoft SQL Server
 - HTML5 + CSS3
-- XAMPP pentru rulare locală
+- XAMPP for local development
 
 ---
 
-## 🧪 Configurare locală
+## 🧪 Local Setup Instructions
 
-1. Clonează repository-ul:
+1. Clone the repository:
    ```bash
    git clone https://github.com/alexandr3i/Project-Web-Development-GeneratiaTech.git
    ```
 
-2. Mută folderul `demo/` în directorul `htdocs` din XAMPP:
+2. Move the `demo/` folder to your XAMPP `htdocs` directory:
    ```
    C:\xampp\htdocs\demo
    ```
 
-3. Creează baza de date `movie_db` în SQL Server și importă fișierul:
+3. Create a database named `movie_db` in SQL Server and import:
    ```
    demo/reviews.sql
    ```
 
-4. Verifică fișierul de conexiune:
+4. Update your connection credentials:
    ```php
    // conexiune_php_sql.php
    $serverName = "localhost";
-   $connectionInfo = array("Database"=>"movie_db", "UID"=>"sa", "PWD"=>"parola_ta");
+   $connectionInfo = array("Database"=>"movie_db", "UID"=>"sa", "PWD"=>"your_password");
    ```
 
-5. Deschide în browser:
+5. Open in your browser:
    ```
    http://localhost/demo/index.php
    ```
 
 ---
 
-## 🧑‍💻 Autor
+## 🧑‍💻 Author
 
 **Alexandru**  
-🎓 Proiect dezvoltat în cadrul **Generația Tech – Web Development**  
-📅 Iulie 2025
+🎓 Project developed during the **Generația Tech – Web Development** program  
+📅 July 2025
 
 ---
 
-## 📜 Licență
+## 📜 License
 
-Acest proiect este open-source și poate fi reutilizat în scop educațional.
+This project is open-source and may be reused for educational purposes.
